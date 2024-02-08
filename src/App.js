@@ -1,5 +1,6 @@
 import Login from "./Components/Login/login";
 import Header from "./Components/Header/header";
+import MainSlider from "./Components/Main/main";
 import "./App.css";
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
         <div className="h-1/6">
           <Header></Header>
         </div>
-        <div className="h-5/6"></div>
+        <div className="h-5/6">
+          <MainSlider></MainSlider>
+        </div>
       </div>
     </div>
   );
