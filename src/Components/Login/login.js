@@ -13,7 +13,6 @@ const Login = () => {
   const [ph, setPh] = useState("");
   const [otp, setOtp] = useState("");
   const [vId, setViD] = useState("");
-
   const configureCaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(auth, "sign-in-button", {
       size: "invisible",
