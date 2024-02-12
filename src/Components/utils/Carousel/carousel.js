@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./carousel.css";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
@@ -22,6 +22,14 @@ const CustomCarousel = () => {
   ];
   const [index, setIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [index]);
+
   const prevSlide = () => {
     const isFirstSlide = index === 0;
     const newIndex = isFirstSlide ? data.length - 1 : index - 1;
@@ -40,10 +48,10 @@ const CustomCarousel = () => {
         style={{ backgroundImage: `url(${data[index].image})` }}
         className="w-full h-full bg-center bg-cover duration-500"
       ></div>
-      <div className="child absolute top-[40%] -translate-x-0 -translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="absolute top-[40%] -translate-x-0 -translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft size={30} onClick={prevSlide} />
       </div>
-      <div className="absolute top-[40%] -translate-x-0 -translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="absolute  top-[40%] -translate-x-0 -translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactRight size={30} onClick={nextSlide} />
       </div>
     </div>
