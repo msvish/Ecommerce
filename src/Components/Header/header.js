@@ -58,7 +58,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <hr></hr>
       <div className="h-1/4 flex flex-row items-center justify-evenly">
         <div className="font-bold cursor-pointer hover:text-lime-600">
           Store
@@ -70,7 +69,6 @@ const Header = () => {
           About Us
         </div>
       </div>
-      <hr></hr>
     </div>
   );
 };

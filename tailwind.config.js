@@ -13,6 +13,12 @@ module.exports = {
         sans: ["Roboto", "sans-serif"],
         mono: ["ui-monospace", "SFMono-Regular"],
       },
+      width: {
+        600: "600px",
+      },
+      height: {
+        400: "400px",
+      },
     },
   },
   plugins: [],

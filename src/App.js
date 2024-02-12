@@ -1,7 +1,7 @@
 import Login from "./Components/Login/login";
 import Header from "./Components/Header/header";
-import MainSlider from "./Components/Main/main";
 import "./App.css";
+import Main from "./Components/Main/main";
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
         <div className="h-1/6">
           <Header></Header>
         </div>
-        <div className="h-5/6">
-          <MainSlider></MainSlider>
+        <div className="h-5/6 max-h-5/6 overflow-y-auto scroll-smooth">
+          <Main />
         </div>
       </div>
     </div>
