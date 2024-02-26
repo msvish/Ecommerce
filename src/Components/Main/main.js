@@ -8,7 +8,7 @@ function Main() {
       <div className="parent bg-green-300 w-full h-3/4">
         <CustomCarousel />
         <BestSelling />
-        <BestSelling />
+        <CustomCarousel />
         <BestSelling />
       </div>
     </div>
