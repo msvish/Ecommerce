@@ -5,16 +5,17 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import image from '../../../Assets/Images/image1.jpg'
 
 const CardContainer = (props) =>{
 
     return(
-        <Card style={{ width: "18%", display:"inline-block"}}>
+        <Card className="w-[18%] flex-shrink-0" >
             <CardMedia
                 component="img"
                 alt="green iguana"
-                height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
+                height="100"
+                image={image}
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
