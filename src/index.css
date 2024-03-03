@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   html {
-    @apply text-stone-500;
+    @apply text-[#3D554A];
   }
 }
 @tailwind components;

@@ -3,13 +3,13 @@ import { Cart, Heart, Login } from "../../Assets/svg";
 
 const Header = () => {
   return (
-    <div className="h-full w-full">
-      <div className="h-1/4 bg-lime-600"></div>
+    <div className="h-full w-full bg-green-50">
+      <div className="h-1/4 bg-[#A6E8B8]"></div>
       <div className="h-1/2">
         <div className="h-full w-full flex flex-row justify-center">
           <div className="w-1/3 flex flex-row items-center justify-center">
             {" "}
-            <p className="font-bold text-3xl text-lime-600">Agro Cart</p>
+            <p className="font-bold text-3xl">Agro Cart</p>
           </div>
           <div className="w-1/3 flex flex-row items-center justify-evenly">
             <div className="flex flex-col items-center md:flex-row">
