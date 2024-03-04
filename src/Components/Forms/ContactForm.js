@@ -10,6 +10,23 @@ import MailIcon from "@mui/icons-material/Mail";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const ContactForm = () => {
+  const theme = createTheme({
+    components: {
+      // Inputs
+      MuiOutlinedInput: {
+        styleOverrides: {
+          root: {
+            "&.Mui-focused": {
+              "& .MuiOutlinedInput-notchedOutline": {
+                border: `2px solid #080D0E`,
+              },
+            },
+          },
+        },
+      },
+    },
+  });
+
   const SubmitButton = styled(Button)(() => ({
     backgroundColor: "#080D0E",
     color: "#A8DDB8",
@@ -52,7 +69,7 @@ const ContactForm = () => {
                 onSubmit={handleSubmit(onSubmit)}
               >
                 <p>Your name</p>
-                <ThemeProvider>
+                <ThemeProvider theme={theme}>
                   <TextField
                     InputProps={{
                       startAdornment: (
