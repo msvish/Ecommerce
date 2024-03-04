@@ -65,7 +65,7 @@ const ContactForm = () => {
           <div className="w-full flex h-3/4">
             <div className="h-full w-full pr-[8rem]">
               <form
-                className="h-full flex flex-col justify-center "
+                className="h-full flex flex-col justify-start"
                 onSubmit={handleSubmit(onSubmit)}
               >
                 <p>Your name</p>
@@ -99,6 +99,9 @@ const ContactForm = () => {
                     id="message"
                     variant="outlined"
                     placeholder="Message"
+                    multiline
+                    rows={3}
+                    maxRows={3}
                   />
                 </ThemeProvider>
                 <br></br>

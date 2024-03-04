@@ -2,7 +2,6 @@ import Login from "./Components/Login/login";
 import Header from "./Components/Header/header";
 import "./App.css";
 import Main from "./Components/Main/main";
-import CardContainer from "./Components/utils/Cards/Card";
 
 function App() {
   return (
