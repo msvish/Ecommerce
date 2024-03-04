@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CustomCarousel from "../utils/Carousel/carousel";
 import { BestSelling } from "../BestSelling/bestSelling";
+import ServiceForm from "../Forms/ServiceForm";
 import ContactForm from "../Forms/ContactForm";
 import Footer from "../Footer/footer";
 
@@ -20,7 +21,7 @@ function Main() {
         <BestSelling />
       </div>
       <div className="parent w-full h-3/4">
-        <ContactForm />
+        <ServiceForm />
       </div>
       <div className="parent w-full h-3/4">
         <ContactForm />
