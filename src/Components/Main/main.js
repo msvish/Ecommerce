@@ -20,10 +20,10 @@ function Main() {
       <div className="parent w-full h-3/4">
         <BestSelling />
       </div>
-      <div className="parent w-full h-3/4">
+      <div className="parent w-full h-3/4 bg-[#F2F2F0]">
         <ServiceForm />
       </div>
-      <div className="parent w-full h-3/4">
+      <div className="parent w-full h-3/4 bg-[#CADEC8]">
         <ContactForm />
       </div>
       <div className="parent h-12">

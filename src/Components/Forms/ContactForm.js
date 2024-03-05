@@ -42,7 +42,7 @@ const ServiceForm = () => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <div className="px-20 py-10 w-full h-full flex flex-row bg-[#9B9A9E] text-[#080D0E]">
+    <div className="px-20 py-10 w-full h-full flex flex-row bg-[#9B9A9E] text-[#080D0E] rounded-tl-[80px] rounded-tr-[80px]">
       <div className="w-full h-full flex flex-row border-[15px] rounded-[75px] border-[#080D0E]">
         <div className="h-full w-1/2 flex flex-col bg-[#FEFEFE] rounded-l-[60px] ">
           <div className="p-[2.5rem] h-1/4 w-full flex flex-wrap  bg-white text-start rounded-tl-[60px] font-semibold text-3xl">
