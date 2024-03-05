@@ -3,8 +3,8 @@ import { Cart, Heart, Login } from "../../Assets/svg";
 
 const Header = () => {
   return (
-    <div className="h-full w-full bg-[#f0f9ff]">
-      <div className="h-1/4 bg-[#088F8F]"></div>
+    <div className="h-full w-full">
+      <div className="h-1/4 bg-[#3B3A3F]"></div>
       <div className="h-1/2">
         <div className="h-full w-full flex flex-row justify-center">
           <div className="w-1/3 flex flex-row items-center justify-center">
@@ -59,13 +59,13 @@ const Header = () => {
         </div>
       </div>
       <div className="h-1/4 flex flex-row items-center justify-evenly">
-        <div className="font-bold cursor-pointer hover:text-lime-600">
+        <div className="font-bold cursor-pointer hover:text-[#CEB4A6]">
           Store
         </div>
-        <div className="font-bold cursor-pointer hover:text-lime-600">
+        <div className="font-bold cursor-pointer hover:text-[#CEB4A6]">
           Escources
         </div>
-        <div className="font-bold cursor-pointer hover:text-lime-600">
+        <div className="font-bold cursor-pointer hover:text-[#CEB4A6]">
           About Us
         </div>
       </div>

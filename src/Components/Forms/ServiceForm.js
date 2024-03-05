@@ -29,7 +29,7 @@ const ServiceForm = () => {
 
   const SubmitButton = styled(Button)(() => ({
     backgroundColor: "#080D0E",
-    color: "#D9F6F3",
+    color: "#E1E0DE",
   }));
 
   const {
@@ -42,7 +42,7 @@ const ServiceForm = () => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <div className="px-20 py-10 w-full h-full flex flex-row bg-[#B3D8D5] text-[#080D0E]">
+    <div className="px-20 py-10 w-full h-full flex flex-row bg-[#9B9A9E] text-[#080D0E]">
       <div className="w-full h-full flex flex-row border-[15px] rounded-[75px] border-[#080D0E]">
         <div className="h-full w-1/2 flex flex-col bg-[#FEFEFE] rounded-l-[60px] ">
           <div className="p-[2.5rem] h-1/4 w-full flex flex-wrap  bg-white text-start rounded-tl-[60px] font-semibold text-3xl">
@@ -53,7 +53,7 @@ const ServiceForm = () => {
             className="h-full bg-center rounded-bl-[60px] bg-contain bg-no-repeat"
           ></div>
         </div>
-        <div className="w-1/2 h-full pl-[2.5rem] flex flex-col bg-[#D9F6F3] rounded-r-[65px]">
+        <div className="w-1/2 h-full pl-[2.5rem] flex flex-col bg-[#E1E0DE] rounded-r-[65px]">
           <div className="pt-[1.5rem] h-1/4 w-full flex flex-col rounded-tl-[60px]">
             <div className="h-full font-semibold text-3xl flex-wrap">
               Get in touch.
