@@ -4,7 +4,7 @@ import { Cart, Heart, Login } from "../../Assets/svg";
 const Header = () => {
   return (
     <div className="h-full w-full">
-      <div className="h-1/4 bg-[#3B3A3F]"></div>
+      <div className="h-1/4 bg-[#3E7E55]"></div>
       <div className="h-1/2">
         <div className="h-full w-full flex flex-row justify-center">
           <div className="w-1/3 flex flex-row items-center justify-center">
