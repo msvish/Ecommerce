@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import styled from "@emotion/styled";
-import Services from "../../Assets/Services.svg";
+import Services from "../../Assets/contactUs.svg";
 import InputAdornment from "@mui/material/InputAdornment";
 import Person4Icon from "@mui/icons-material/Person4";
 import MailIcon from "@mui/icons-material/Mail";
@@ -44,12 +44,16 @@ const ServiceForm = () => {
   return (
     // <div className="w-full h-full flex flex-row bg-[#EEEAE3] text-[#080D0E]">
     <div className="w-full h-full px-20 py-10 flex flex-row bg-[#CADEC8] rounded-tl-[80px] rounded-tr-[80px] ">
-      <div className="w-1/2 h-full bg-lime-100">Hello</div>
-      <div className="w-1/2 h-full bg-white">
-        <div
-          style={{ backgroundImage: `url(${Services})` }}
-          className="h-full bg-center rounded-bl-[60px] bg-center bg-no-repeat"
-        ></div>
+      <div className="w-1/2 h-full bg-lime-100 rounded-l-[2rem] shadow-2xl">
+        Hello
+      </div>
+      <div className="w-1/2 h-full bg-lime-100 rounded-r-[2rem]">
+        <div className="w-full h-full bg-white rounded-[2rem] shadow-2xl">
+          <div
+            style={{ backgroundImage: `url(${Services})` }}
+            className="h-full bg-center bg-no-repeat"
+          ></div>
+        </div>
       </div>
     </div>
   );
